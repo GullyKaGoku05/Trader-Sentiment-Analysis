@@ -62,7 +62,7 @@ trader-sentiment-analysis/
 jupyter notebook TraderPerformance.ipynb
 ```
 
-Run all cells top-to-bottom (`Kernel → Restart & Run All`). Charts will be saved to the `outputs/` folder automatically.
+Run all cells top-to-bottom (`Kernel → Restart & Run All`). Charts will be automatically saved to the `outputs/` folder.
 
 ---
 
@@ -75,12 +75,12 @@ Fear days: median PnL **$460**, win rate **71.4%**.
 Neutral days are weakest on both dimensions.
 
 **Insight 2: Fear triggers hyperactivity; Greed triggers bigger bets**  
-Traders fire 40%+ more trades the day after a Fear regime. On Greed days, average position size grows, and traders bet larger when confident. Directional bias (long/short ratio) stays flat across regimes.
+Traders fire 40%+ more trades the day after a Fear regime. On Greed days, average position size increases, and traders bet larger when they are confident. Directional bias (long/short ratio) stays flat across regimes.
 
 **Insight 3: Fear-day survivors outperform the following day**  
 Day after Fear: avg PnL **$6,042**, win rate **71.7%**.  
 Day after Greed: avg PnL **$4,729**, win rate **69.2%**.  
-Staying active during Fear selectively filters skilled traders and the rebound is real.
+Staying active during Fear selectively filters skilled traders, and the rebound is real.
 
 **Insight 4: Greed streaks produce overtrading without proportional returns**  
 Trade count rises monotonically with streak length. PnL growth does not keep pace. Sustained Greed (6+ days) shows elevated activity but diminishing per-trade returns.
@@ -91,7 +91,7 @@ High-leverage traders: Greed-day median PnL **$458** (3.1× gap).
 On Fear days, the gap narrows; high leverage is penalized more on Greed days than Fear.
 
 **Insight 6: No revenge trading; survivors are disciplined**  
-After a loss on a Fear day, traders average only 77.6 next-day trades vs 136.8 after a win — a 44% pullback. The pattern holds across regimes, showing the cohort practices loss of discipline, not revenge overtrading.
+After a loss on a Fear day, traders average only 77.6 next-day trades vs 136.8 after a win, a 44% pullback. The pattern holds across regimes, showing the cohort practices loss of discipline, not revenge overtrading.
 
 
 ## Dependencies
