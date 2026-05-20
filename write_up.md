@@ -1,5 +1,5 @@
 # Trader Performance vs Market Sentiment
-**Primetrade.ai — Data Science Intern Round-0 Assignment**  
+**Primetrade.ai: Data Science Intern Round-0 Assignment**  
 **Candidate:** Nikhil Kshirsagar | **Date:** 20th May 2025
 
 ---
