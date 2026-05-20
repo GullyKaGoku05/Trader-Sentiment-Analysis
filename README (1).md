@@ -1,7 +1,5 @@
 # Trader Performance vs Market Sentiment
-### Data Science / Analytics Intern — Round-0 Assignment
-**Submitted to:** Primetrade.ai Hiring Team  
-**Candidate:** [Your Name]  
+**Candidate:** Nikhil Kshirsagar 
 **Date:** May 2025
 
 ---
@@ -9,28 +7,6 @@
 ## Overview
 
 This project analyzes how Bitcoin market sentiment (Fear/Greed Index) relates to trader behavior and realized performance on **Hyperliquid**, a decentralized perpetuals exchange. The analysis covers 211,224 on-chain trade records across 32 trader accounts from May 2023 to May 2025, merged with 2,644 daily sentiment readings to surface actionable, evidence-backed strategy rules.
-
----
-
-## Repository Structure
-
-```
-trader-sentiment-analysis/
-├── TraderPerformance.ipynb   # Full analysis notebook (run top-to-bottom)
-├── README.md                 # This file — setup, usage, summary
-├── write_up.md               # 1-page methodology + insights + recommendations
-└── outputs/                  # Auto-generated charts (saved by notebook)
-    ├── chart1_regime_performance.png
-    ├── chart2_behavior_regime.png
-    ├── chart3_nextday_reaction.png
-    ├── chart4_greed_streak.png
-    ├── chart5_leverage_regime.png
-    ├── chart6_archetypes.png
-    ├── chart7_revenge_trading.png
-    └── chart8_stability_vs_fear.png
-```
-
----
 
 ## Datasets
 
@@ -90,71 +66,33 @@ Run all cells top-to-bottom (`Kernel → Restart & Run All`). Charts will be sav
 
 ---
 
-## Analysis Summary
-
-### Data Snapshot
-
-| Dataset | Rows | Period |
-|---|---|---|
-| Hyperliquid trades | 211,224 | May 2023 – May 2025 |
-| Fear/Greed Index | 2,644 | Feb 2018 – May 2025 |
-| Post-merge (exit trades) | 121,303 | Dec 2023 – May 2025 |
-| Unique trader accounts | 32 | — |
-
-No missing values or duplicates were found in either source dataset.
-
----
 
 ### Key Insights
 
-**Insight 1 — Greed generates larger wins; Fear generates more consistent wins**  
+**Insight 1: Greed generates larger wins; Fear generates more consistent wins**  
 Greed days: median PnL **$587**, win rate **69.3%**.  
 Fear days: median PnL **$460**, win rate **71.4%**.  
 Neutral days are weakest on both dimensions.
 
-**Insight 2 — Fear triggers hyperactivity; Greed triggers bigger bets**  
-Traders fire 40%+ more trades the day after a Fear regime. On Greed days, average position size grows — traders bet larger when confident. Directional bias (long/short ratio) stays flat across regimes.
+**Insight 2: Fear triggers hyperactivity; Greed triggers bigger bets**  
+Traders fire 40%+ more trades the day after a Fear regime. On Greed days, average position size grows, and traders bet larger when confident. Directional bias (long/short ratio) stays flat across regimes.
 
-**Insight 3 — Fear-day survivors outperform the following day**  
+**Insight 3: Fear-day survivors outperform the following day**  
 Day after Fear: avg PnL **$6,042**, win rate **71.7%**.  
 Day after Greed: avg PnL **$4,729**, win rate **69.2%**.  
 Staying active during Fear selectively filters skilled traders and the rebound is real.
 
-**Insight 4 — Greed streaks produce overtrading without proportional returns**  
+**Insight 4: Greed streaks produce overtrading without proportional returns**  
 Trade count rises monotonically with streak length. PnL growth does not keep pace. Sustained Greed (6+ days) shows elevated activity but diminishing per-trade returns.
 
-**Insight 5 — Low leverage dominates on Greed days**  
+**Insight 5: Low leverage dominates on Greed days**  
 Low-leverage traders: Greed-day median PnL **$1,441**.  
 High-leverage traders: Greed-day median PnL **$458** (3.1× gap).  
-On Fear days the gap narrows — high leverage is penalized more on Greed days than Fear.
+On Fear days, the gap narrows; high leverage is penalized more on Greed days than Fear.
 
-**Insight 6 — No revenge trading; survivors are disciplined**  
-After a loss on a Fear day, traders average only 77.6 next-day trades vs 136.8 after a win — a 44% pullback. The pattern holds across regimes, showing the cohort practices loss discipline, not revenge overtrading.
+**Insight 6: No revenge trading; survivors are disciplined**  
+After a loss on a Fear day, traders average only 77.6 next-day trades vs 136.8 after a win — a 44% pullback. The pattern holds across regimes, showing the cohort practices loss of discipline, not revenge overtrading.
 
----
-
-### Strategy Recommendations
-
-| Rule | Trigger | Action | Basis |
-|---|---|---|---|
-| **Rule 1** | Fear/Greed = Greed | Keep leverage low; increase *position size* not *multiplier* | Chart 5: Low-lev traders earn 3× more on Greed days |
-| **Rule 2** | Fear/Greed = Fear | Stay active; tighten individual trade sizes | Charts 1 & 3: Fear has highest win rate + best next-day returns |
-| **Rule 3** | Greed streak ≥ 5 days | Cap daily trade frequency | Chart 4: Trades rise but PnL plateaus in prolonged Greed |
-
----
-
-### Trader Archetypes (k=4 KMeans Clustering)
-
-| Archetype | Key Traits |
-|---|---|
-| **Consistent Winner** | High win rate, high PnL stability, low fear exposure |
-| **Aggressive Scalper** | High trade frequency, high leverage, volatile PnL |
-| **Emotion-Reactive** | High fear exposure, elevated activity during fear regimes |
-| **Low-Risk Passive** | Low frequency, low leverage, moderate stability |
-
-The scatter plot (Chart 8) confirms that traders who concentrate volume during Fear regimes show more erratic PnL — selective participation is a hallmark of top performers.
-
----
 
 ## Dependencies
 
@@ -170,7 +108,6 @@ jupyter >= 1.0
 
 ## Contact
 
-**[Your Full Name]**  
-[your.email@example.com]  
-[LinkedIn Profile URL]  
-[GitHub Profile URL]
+**Nikhil Kshirsagar**  
+[nikhilkshirsagar.iitb@gmail.com]  
+[www.linkedin.com/in/nikhil-kshirsagar-0220712a6]  
