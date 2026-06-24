@@ -15,56 +15,6 @@ This project analyzes how Bitcoin market sentiment (Fear/Greed Index) relates to
 | `historical_data.csv` | [Google Drive](https://drive.google.com/file/d/1IAfLZwu6rJzyWKgBToqwSmmVYU6VbjVs/view) | Hyperliquid on-chain trades (211,224 rows) |
 | `fear_greed_index.csv` | [Google Drive](https://drive.google.com/file/d/1PgQC0tO8XN-wqkNyghWc_-mnrYv_nhSf/view) | Bitcoin Fear/Greed daily index (2,644 rows) |
 
-> **Download both files and place them in the same directory as the notebook before running.**
-
----
-
-## Setup & How to Run
-
-### 1. Clone / Download
-
-```bash
-git clone https://github.com/<your-username>/trader-sentiment-analysis.git
-cd trader-sentiment-analysis
-```
-
-### 2. Install Dependencies
-
-Python 3.9+ recommended.
-
-```bash
-pip install pandas numpy matplotlib scikit-learn jupyter
-```
-
-Or with a virtual environment:
-
-```bash
-python -m venv venv
-source venv/bin/activate        # Windows: venv\Scripts\activate
-pip install pandas numpy matplotlib scikit-learn jupyter
-```
-
-### 3. Add the Data Files
-
-Download `historical_data.csv` and `fear_greed_index.csv` from the Google Drive links above and place them in the project root:
-
-```
-trader-sentiment-analysis/
-├── historical_data.csv       ← place here
-├── fear_greed_index.csv      ← place here
-├── TraderPerformance.ipynb
-...
-```
-
-### 4. Run the Notebook
-
-```bash
-jupyter notebook TraderPerformance.ipynb
-```
-
-Run all cells top-to-bottom (`Kernel → Restart & Run All`). Charts will be automatically saved to the `outputs/` folder.
-
----
 
 
 ### Key Insights
